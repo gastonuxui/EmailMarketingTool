@@ -1,4 +1,47 @@
 
+class PanelIzquierdo{
+    constructor(informativo,comercial){
+        this.informativo=informativo;
+        this.comercial=comercial;
+        
+    }
+    configuracionInformativo(){
+
+    }
+
+    configuracionComercial(){
+
+    }
+}
+
+
+class PanelCentral{
+    constructor(){
+
+    }
+
+
+}
+
+
+//¿Que parametros y metodos fa a tener el panel ?
+class PanelDerecho{
+    constructor (){
+
+    }
+}
+
+
+
+class VistaPrevia{
+    constructor(){
+        
+    }
+}
+
+
+
+
 
 
 const botonDropdown = document.querySelector('.dropdownBoton');
