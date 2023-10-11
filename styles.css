@@ -1,0 +1,283 @@
+
+body{
+    background: #445C70;
+    margin:0px;
+    
+}
+
+.navbar{
+    background: #293743;
+    display: flex;
+    height: 56px;
+    padding: 8px 16px;
+    gap: 8px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+.Volver-al-administrador{
+    display: flex;
+    color: var(--solid-white, #FFF);
+    /* 21px/App/h1-onboarding */
+    font-family: Open Sans;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 1200px;
+}
+
+.Grupo-iconos-vista-previa img{
+   margin-right: 16px;
+}
+
+
+
+
+section{
+    
+    color: #FFF;
+    background: #364857;
+    height: 844px;
+    float: right;
+ 
+}
+
+.dropdownBoton{
+    
+    padding: 1em;      
+}
+ 
+.dropdownBoton h3{
+    color: var(--solid-white, #FFF);
+     /* 12px/payments-list-headers */
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+div h4{
+    color: var(--solid-white, #FFF);
+    /* 16px / Body-Semibold */
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+   
+}
+
+button {
+    color: var(--solid-white, #FFF);
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    background: #627B90;
+    border-radius: 4px 4px 4px 4px;
+    width: 208px;
+    height: 29px;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    border: none;    
+    
+}
+
+
+ul {
+    display: none;
+    margin: 0;
+    width: 208px;
+    padding: 0;
+}
+
+ul li{
+    width: 208;
+    height: 29px;
+    padding-left:  8px;
+    border-radius: 0 ;
+}
+
+
+
+ul li:hover{
+    background: #293743;
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+
+#iconoArrow{
+    width: 16px;  
+    
+    
+}
+
+/*PIXELES input*/
+.pixeles{
+    padding: 1em;
+    height: 29px;
+    border-radius: 4px;
+}
+
+
+.pixeles .pixelNumber{
+    height: 29px;
+    width: 60px;
+    border-radius: 4px;
+    color: var(--solid-white, #FFF);
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    background: #627B90;
+    border-radius: 4px 4px 4px 4px;
+    height: 29px;
+    border: none; 
+    text-align: center;
+}
+
+.pixeles h3{
+    color: var(--solid-white, #FFF);
+     /* 12px/payments-list-headers */
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+ /* Aqui comienza el panel central */
+
+.panelCentral{
+    width: 645px;
+    height: 735px;
+    
+    background: #FFF;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.50);
+    margin: auto;
+}
+
+
+
+
+
+.panelIzquierdo{
+    color: #FFF;
+    height: 844px;
+    float: left;
+    width: 208px;
+    flex-shrink: 0;
+    margin-top: 84px;
+    margin-left: 38px;
+}
+
+.panelIzquierdo button{
+    margin-bottom: 22px;
+}
+
+
+
+.BotonInformativo{
+    display: flex;
+    width: 208px;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+    
+}
+
+.BotonComercial{
+    display: flex;
+    width: 208px;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+
+
+
+.botonGuardar{
+    width: 113px;
+    height: 36px;
+    padding: 6px 12px;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--cyan-cyan-700, #0796D4);
+    background: var(--cyan-cyan-500, #3EB5E8);
+}
+
+
+.BotonVistaPrevia{
+    width: 42px;
+    height: 30px;
+    padding: 6px 12px;
+    gap: 8px;
+    border: 1px solid var(--theme-light, #F8F9FA);
+    background: var(--HitBox, rgba(255, 255, 255, 0.00));
+}
+
+
+.mi-boton-swal{
+    
+    height: 38px;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: #00819F;
+    
+}
+
+
+
+/*AGREGADOS PARA JS*/
+
+/*Quitar bordes redondeados del dropdown*/
+.BotonClickeado{
+    border-radius: 4px 4px 0px 0px;
+}
+/*GIRAR EL ICONO ARROW*/
+.rotarIcono{
+    transform: rotate(-180deg);
+}
+
+/*Activar Dropdown*/
+.dropdownactive{
+    color: var(--solid-white, #FFF);
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    background: #627B90;
+    display: block;
+    color: white;
+    cursor: pointer;
+    list-style: none;   
+    border-radius: 0px 0px 4px 4px;
+}

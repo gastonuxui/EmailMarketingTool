@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dropdown list using javascript</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="Volver-al-administrador">
+            <img src="./imagenes/arrowleft.svg" alt="">
+            <h3>
+                Volver al administrador
+            </h3> 
+        </div>
+        
+            <div class="Grupo-iconos-vista-previa">
+                <img src="./imagenes/desktopicon.svg" alt="">
+                <img src="./imagenes/mobileoneicon.svg" alt="">
+                <img src="./imagenes/mobiletwoicon.svg" alt="">
+            </div>
+           
+            <button class="BotonVistaPrevia">
+                <img src="./imagenes/visibilityicon.svg" alt="">
+                
+            </button>
+            <button class="botonGuardar" id="BotonGuardarid">
+                <img src="./imagenes/saveicon.svg" alt="">
+                Guardar
+            </button>
+        
+           
+    </nav>
+
+
+
+    <section>
+
+       
+
+        <div class="dropdownBoton">
+            <h4>Campo de texto</h4>
+            <h3>Fuente</h3>
+            <button id="BotonConFlecha">
+
+                <p>boton</p>
+                <img src="./imagenes/caret-down-solid.svg" alt="" id="iconoArrow">
+            </button>
+            <ul id="dropdown">
+                <li>opción</li>
+                <li>opción</li>
+                <li>opción</li>
+                <li>opción</li>
+                <li>opción</li>
+                <li>opción</li>
+            </ul>
+        </div>
+
+        <div class="pixeles">
+            <h3>Pixeles</h3>
+            <input type="number" class="pixelNumber">
+        </div>
+    </section>
+
+
+
+    <div class="panelIzquierdo">
+        <h4>Tipo de email</h4>
+        <div class="contenedor-de-botones">
+            <button class="BotonInformativo">
+                Informativo
+            </button>
+
+            <button class="BotonComercial">
+                Comercial
+            </button>
+        </div>
+    </div>
+
+
+    <div class="PanelCentral">
+
+    </div>
+
+
+    
+    <div class="panelCentral">
+        panel central
+    </div>
+
+
+    
+
+        
+
+
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>  
+</body>
+
+</html>
