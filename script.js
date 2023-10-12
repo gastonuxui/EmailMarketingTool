@@ -1,60 +1,60 @@
-
-class PanelIzquierdo{
-    constructor(informativo,comercial){
-        this.informativo=informativo;
-        this.comercial=comercial;
-        
-    }
-    configuracionInformativo(){
-
-    }
-
-    configuracionComercial(){
-
-    }
-}
-
-
-class PanelCentral{
+class Input{
     constructor(){
 
     }
 
-
-}
-
-
-//¿Que parametros y metodos fa a tener el panel ?
-class PanelDerecho{
-    constructor (){
-
+    mostrarInput(){
+        let inputNumber = document.querySelector('.inputNumber');
+        inputNumber.innerHTML+= ` <input type="number"   />`
     }
 }
 
+const IP=new Input();
+IP.mostrarInput();
 
 
-class VistaPrevia{
+
+class Dropdown {
     constructor(){
         
     }
+
+    mostrarDropdown(){
+        let dropDown = document.querySelector('.dropdownMolde');
+        dropDown.innerHTML+= ` <select name="select">
+            <option value="value1">Value 1</option>
+            <option value="value2" selected>Value 2</option>
+            <option value="value3">Value 3</option>
+            </select>`
+    }
+
+       
 }
 
+const DP=new Dropdown();
+DP.mostrarDropdown();
+
+
+
+class ColorPicker{
+    constructor(){
+
+    }
+
+    mostrarColorPicker(){
+        let colorPicker1 = document.querySelector('.ColorPicker');
+        colorPicker1.innerHTML+= `<input type="color" name="" id="">`
+    
+    }
+}
+
+const CPK = new ColorPicker();
+CPK.mostrarColorPicker();
 
 
 
 
 
-const botonDropdown = document.querySelector('.dropdownBoton');
-const dropDown = document.querySelector('#dropdown');
-const BotonConFlecha = document.querySelector('#BotonConFlecha');
-const iconoArrow180 = document.querySelector('#iconoArrow');
-
-botonDropdown.addEventListener('click', () => {
-    dropDown.classList.toggle('dropdownactive');
-    BotonConFlecha.classList.toggle('BotonClickeado');
-    iconoArrow180.classList.toggle('rotarIcono');
-
-})
 
 const botonGuardar=document.querySelector('#BotonGuardarid')
 botonGuardar.addEventListener('click',()=>{

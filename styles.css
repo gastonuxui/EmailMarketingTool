@@ -14,7 +14,16 @@ body{
     align-items: center;
     flex-shrink: 0;
 }
+.navbar h3{
+    color: var(--solid-white, #FFF);
 
+    /* 21px/App/h1-onboarding */
+    font-family: Open Sans;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 .Volver-al-administrador{
     display: flex;
@@ -27,6 +36,10 @@ body{
     line-height: normal;
     margin-right: 1200px;
 }
+
+
+
+
 
 .Grupo-iconos-vista-previa img{
    margin-right: 16px;
@@ -41,15 +54,15 @@ section{
     background: #364857;
     height: 844px;
     float: right;
- 
+    padding: 1em; 
+    
+
 }
 
-.dropdownBoton{
-    
-    padding: 1em;      
-}
- 
-.dropdownBoton h3{
+
+
+
+h3{
     color: var(--solid-white, #FFF);
      /* 12px/payments-list-headers */
     font-family: Open Sans;
@@ -95,70 +108,12 @@ button {
 }
 
 
-ul {
-    display: none;
-    margin: 0;
-    width: 208px;
-    padding: 0;
-}
-
-ul li{
-    width: 208;
-    height: 29px;
-    padding-left:  8px;
-    border-radius: 0 ;
-}
 
 
 
-ul li:hover{
-    background: #293743;
-    border-radius: 0px 0px 4px 4px;
-}
 
 
 
-#iconoArrow{
-    width: 16px;  
-    
-    
-}
-
-/*PIXELES input*/
-.pixeles{
-    padding: 1em;
-    height: 29px;
-    border-radius: 4px;
-}
-
-
-.pixeles .pixelNumber{
-    height: 29px;
-    width: 60px;
-    border-radius: 4px;
-    color: var(--solid-white, #FFF);
-    font-family: Open Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 21px */
-    background: #627B90;
-    border-radius: 4px 4px 4px 4px;
-    height: 29px;
-    border: none; 
-    text-align: center;
-}
-
-.pixeles h3{
-    color: var(--solid-white, #FFF);
-     /* 12px/payments-list-headers */
-    font-family: Open Sans;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-transform: uppercase;
-}
 
 
  /* Aqui comienza el panel central */
@@ -169,6 +124,7 @@ ul li:hover{
     background: #FFF;
     box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.50);
     margin: auto;
+    margin-top: 39px;
 }
 
 
@@ -254,29 +210,3 @@ ul li:hover{
 
 
 
-/*AGREGADOS PARA JS*/
-
-/*Quitar bordes redondeados del dropdown*/
-.BotonClickeado{
-    border-radius: 4px 4px 0px 0px;
-}
-/*GIRAR EL ICONO ARROW*/
-.rotarIcono{
-    transform: rotate(-180deg);
-}
-
-/*Activar Dropdown*/
-.dropdownactive{
-    color: var(--solid-white, #FFF);
-    font-family: Open Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 21px */
-    background: #627B90;
-    display: block;
-    color: white;
-    cursor: pointer;
-    list-style: none;   
-    border-radius: 0px 0px 4px 4px;
-}
