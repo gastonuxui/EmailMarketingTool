@@ -10,19 +10,19 @@
 
 <body>
 
-    <nav class="navbar">
-        <div class="Volver-al-administrador">
-            <img src="./imagenes/arrowleft.svg" alt="">
-            <h3>
-                Volver al administrador
-            </h3>
-        </div>
+    <header class="header">
 
-        <div class="Grupo-iconos-vista-previa">
+
+        <h3>
+            Simulador de mail
+        </h3>
+
+
+        <ul class="Grupo-iconos-vista-previa">
             <img src="./imagenes/desktopicon.svg" alt="">
             <img src="./imagenes/mobileoneicon.svg" alt="">
             <img src="./imagenes/mobiletwoicon.svg" alt="">
-        </div>
+        </ul>
 
         <button class="BotonVistaPrevia">
             <img src="./imagenes/visibilityicon.svg" alt="" id="IconoVistaPrevia">
@@ -34,67 +34,68 @@
         </button>
 
 
-    </nav>
+    </header>
 
-   
-
-    <section>
-        
-        <div  class="dropdownMolde">
-            
+    <section class="modal ">
+        <div class="modal__container">
+            <img src="./imagenes/arrowleft.svg" alt="">
+            <h2 class="modal__tittle">bienvenido al sitio</h2>
+            <p class="modal__paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, necessitatibus!</p>
+            <a href="" class="modal__close">X cerrar modal</a>
         </div>
-        <div class="ColorPicker">
-            
-        </div>
-        <div class="divIntpu">
-
-
-            <div class="inputNumber">
-                
-            </div>
-        </div>
-        
-        
-
     </section>
 
 
-    
-    
+    <aside>
 
+        <div class="dropdownMolde">
 
-
-
-
-
-    <div class="panelIzquierdo">
-        <h4>Tipo de email</h4>
-        <div class="contenedor-de-botones">
-            <button class="BotonInformativo">
-                Informativo
-            </button>
-
-            <button class="BotonComercial">
-                Comercial
-            </button>
         </div>
-    </div>
+        <div class="ColorPicker">
+
+        </div>
+        <div class="divIntpu">
+            <div class="inputNumber">
+
+            </div>
+        </div>
+
+        <div class="botonFormato">
+
+        </div>
 
 
-    <div class="PanelCentral">
-
-    </div>
-
-
-
-    <div class="panelCentral">
-        panel central
-    </div>
+    </aside>
 
 
 
 
-    <script src="script.js"></script>
+
+    <main class="panelCentral">
+        
+        <input type="text" placeholder="Escribe un titulo" style="width: 98.8%; height: 5%;">
+        <input type="image" src="" alt="" id="agregaImgBTN">
+        <button type="submit" class="hero__cta">sube una imagen</button>
+
+        <textarea name="" id="caja-de-texto" style="width: 99%; " rows="10"
+            placeholder="Escribe el texto de tu email"></textarea>
+
+        <input type="button" value="CTA">
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script src="panelDerecho.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
 </body>
 
