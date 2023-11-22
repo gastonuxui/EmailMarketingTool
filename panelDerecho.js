@@ -37,7 +37,7 @@ abrirModalIMG.mostrarModal();
 
 
 
-class PanelIzquierdo {
+class PanelDerecho {
 
     constructor() {
         this.dropDown = [];
@@ -54,7 +54,8 @@ class PanelIzquierdo {
         <input type="number"/>`
     }
     mostrarButtonSpecial() {
-        let botonspecial = document.querySelector('.botonFormato');
+        let botonspecial = document.querySelector('.botonFormato'); 
+
         botonspecial.innerHTML += `<div class=" botonesDerecho"> 
         
         <h4>Formato</h4>
@@ -62,10 +63,15 @@ class PanelIzquierdo {
         <button>hola</button>
         <button>hola</button>
         <button>hola</button>
-        <button>hola</button>
+        
         
         </div>`
     }
+
+
+
+
+
     mostrarDropdown() {
         let dropDown = document.querySelector('.dropdownMolde');
         dropDown.innerHTML += ` 
@@ -81,27 +87,60 @@ class PanelIzquierdo {
     mostrarColorPicker() {
         let colorPicker1 = document.querySelector('.ColorPicker');
         colorPicker1.innerHTML += `
-        <h4>titulo</h4>
+        <h4>Color</h4>
         <input type="color" name="" id="colorPiker">
         `
 
     }
 
-    cambiarColor() {
-        /*La idea es lograr que las letras cambien de color*/
-        const elegirColor = document.querySelector('#colorPiker');
-        const textoMail = document.querySelector('#textoMail');
-        elegirColor.addEventListener('mousemove', () => {
-            textoMail.classList.add('MostrarTexto');
-        });
+    
+    controladorColor(){
+    const input = document.querySelector("input");
+    const cuadrado=document.querySelector('.cuadrado');
+    const cuadrado2=document.querySelector('.cuadrado2');
+
+    cuadrado.addEventListener('click',()=>{
+    cuadrado.style.borderColor='red';
+    cuadrado.style.color='red';
+    cuadrado2.style.borderColor='black';
+    cuadrado2.style.color='black';
+    input.oninput= ()=>{
+    
+        cuadrado.style.backgroundColor=input.value;
+        
+        cuadrado.style.color='#ffff';
+    };
+        
+});
+
+
+
+    cuadrado2.addEventListener('click',()=>{
+    cuadrado2.style.borderColor='red';
+    cuadrado2.style.color='red';
+    cuadrado.style.borderColor='black'
+    cuadrado.style.color='black';
+    input.oninput= ()=>{
+    
+        cuadrado2.style.backgroundColor=input.value;
+        
+        cuadrado2.style.color='#ffff';
+    };
+        
+    });
+
     }
+    
+
+    
 }
 
-const IP = new PanelIzquierdo();
+const IP = new PanelDerecho();
 IP.mostrarInput();
 IP.mostrarButtonSpecial();
 IP.mostrarDropdown();
 IP.mostrarColorPicker();
+IP.controladorColor();
 
 
 
@@ -126,6 +165,7 @@ botonGuardar.addEventListener('click', () => {
 
     })
 })
+
 
 
 
