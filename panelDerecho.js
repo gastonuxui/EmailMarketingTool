@@ -26,10 +26,13 @@ class PanelCentral {
         })
     }
 
+   
 
 };
 const abrirModalIMG = new PanelCentral();
 abrirModalIMG.mostrarModal();
+
+
 
 
 
@@ -92,55 +95,15 @@ class PanelDerecho {
         `
 
     }
-
-    
-    controladorColor(){
-    const input = document.querySelector("input");
-    const cuadrado=document.querySelector('.cuadrado');
-    const cuadrado2=document.querySelector('.cuadrado2');
-
-    cuadrado.addEventListener('click',()=>{
-    cuadrado.style.borderColor='red';
-    cuadrado.style.color='red';
-    cuadrado2.style.borderColor='black';
-    cuadrado2.style.color='black';
-    input.oninput= ()=>{
-    
-        cuadrado.style.backgroundColor=input.value;
-        
-        cuadrado.style.color='#ffff';
-    };
-        
-});
-
-
-
-    cuadrado2.addEventListener('click',()=>{
-    cuadrado2.style.borderColor='red';
-    cuadrado2.style.color='red';
-    cuadrado.style.borderColor='black'
-    cuadrado.style.color='black';
-    input.oninput= ()=>{
-    
-        cuadrado2.style.backgroundColor=input.value;
-        
-        cuadrado2.style.color='#ffff';
-    };
-        
-    });
-
-    }
-    
-
-    
-}
+   
+};
 
 const IP = new PanelDerecho();
 IP.mostrarInput();
 IP.mostrarButtonSpecial();
 IP.mostrarDropdown();
 IP.mostrarColorPicker();
-IP.controladorColor();
+
 
 
 
@@ -167,8 +130,38 @@ botonGuardar.addEventListener('click', () => {
 })
 
 
-
-
+_//Cambiar color de background
+const input = document.getElementById("colorPiker");
+        const cuadrado = document.querySelector('.cuadrado');
+        const cuadrado2 = document.querySelector('.cuadrado2');
+    
+        cuadrado.addEventListener('click',()=>{
+        cuadrado.style.borderColor='red';
+        cuadrado.style.color='red';
+        cuadrado2.style.borderColor='black';
+        cuadrado2.style.color='black';
+        input.oninput= ()=>{
+        
+            cuadrado.style.backgroundColor=input.value;
+            
+            cuadrado.style.color='#ffff';
+        };
+            
+    });
+    
+        cuadrado2.addEventListener('click',()=>{
+        cuadrado2.style.borderColor='red';
+        cuadrado2.style.color='red';
+        cuadrado.style.borderColor='black'
+        cuadrado.style.color='black';
+        input.oninput= ()=>{
+        
+            cuadrado2.style.backgroundColor=input.value;
+            
+            cuadrado2.style.color='#ffff';
+        };
+            
+        });
 
 
 
