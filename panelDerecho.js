@@ -130,7 +130,7 @@ botonGuardar.addEventListener('click', () => {
 })
 
 
-_//Cambiar color de background
+//Cambiar color de background
 const input = document.getElementById("colorPiker");
         const cuadrado = document.querySelector('.cuadrado');
         const cuadrado2 = document.querySelector('.cuadrado2');
