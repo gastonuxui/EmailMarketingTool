@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* ESTILOS PANEL DERECHO */
+
+:root {
+    --color-green: #0796D4;
+    --color-red: #FFFFFF;
+    --color-button: #fdffff;
+    --color-black: #000;
+}
+.switch-button {
+    display: inline-block;
+}
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+.switch-button .switch-button__label {
+    background-color: var(--color-red);
+    width: 32px;
+    height: 16px;
+    border: 2px solid #D9D9D9;
+    border-radius: 3rem;
+    display: inline-block;
+    position: relative;
+}
+.switch-button .switch-button__label:before {
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: var(--color-button);
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+    background-color: var(--color-green);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(1rem);
+}
+
+/*ASIDE panelDerecho*/
+
+aside h4{
+    color: var(--solid-white, #FFF);
+
+/* 12px/payments-list-headers */
+font-family: Open Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-transform: uppercase;
+}
+.panelDerechoIMG{
+    background-color: #364857;
+    width: 241px;
+    height: 100%;
+    position: fixed;
+    color: white;
+    font-family: "open sans", "sans serif";
+    right: 0;
+    top: 0;
+    padding-left: 16px;
+    
+}
+
+
+
+
+aside .pixelesSeccion{
+    display: flex;
+    gap: 4px;
+    
+}
+
+aside .pixelesSeccion select{
+    width: 42px;
+   height: 33px;
+   border: none;
+   background-color: #293743;
+   color: white;
+}
+ aside .inputPixeles input{
+    margin-bottom: 4px;
+    width: 172px;
+    height: 31px;
+    border-radius: 4px;
+    border: none;
+    background-color: #627B90;
+ }
+
+aside a:hover{
+    cursor: pointer;
+}
+
+.contenedorBTN__aHorizontal{
+    width: 211px;
+    height: 31px;
+    background-color: #627B90;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedorBTN__aHorizontal a{
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorBTN__aHorizontal a:hover{
+    background-color: #293743;
+    border-radius: 4px;
+ }
+
+
+.contenedorBTNjustificado{
+    width: 211px;
+    height: 31px;
+    background-color: #627B90;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+
+
+.contenedorBTNjustificado a{
+    width: 52.75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorBTNjustificado a:hover{
+    background-color: #293743;
+    border-radius: 4px;
+}
+
+
+.contenedorBTNlista{
+    width: 211px;
+    height: 31px;
+    background-color: #627B90;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedorBTNlista a{
+    width: 104.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorBTNlista a:hover{
+    background-color: #293743;
+    border-radius: 4px;
+}
+
+.EnlaceInput input{
+    width: 208px;
+    height: 31px;
+    border: none;
+    border-radius: 4px;
+    background-color: #627B90;
+    
+}
+.EnlaceInput input::placeholder{
+    color: white;
+    opacity: 50%;
+}
+
+aside .colorPicker input[type=text]{
+    width: 150px;
+    height: 31px;
+    border: none;
+    border-radius: 4px;
+    background-color: #627B90;
+ }
+ aside  .colorPicker input::placeholder{
+    color: white;
+ }
+
+/*BotonCambiarImg*/
+
+.BotonCambiarImg{
+    display: flex;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid #0796D4;
+    background: #3EB5E8;
+    color: var(--solid-white, #FFF);
+    margin-top:24px ;
+    /* 16px / Body */
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 208px;
+    height: 36px;
+}
+
+.BotonCambiarImg:hover{
+    cursor: pointer;
+    background-color: #40A7D3;
+}
+
+
+
+
+
+
+
+

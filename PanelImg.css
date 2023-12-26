@@ -4,56 +4,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-body {
-    background: #445C70;
-    margin: 0px;
-
-}
-
-
-
-
-header {
-    background: #293743;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
-
-
-.botonGuardar {
-    height: 36px;
-    margin-right: 5%;
-    border-radius: 4px;
-    border: 1px solid #3EB5E8;
-    background-color: #00819F;
-}
-
-.botonGuardar:hover{
-    cursor: pointer;
-    background-color: #3EB5E8;
-}
-
-
-.BotonVistaPrevia {
-    height: 36px;
-    border-radius: 4px;
-    border: 1px solid #0796D4;
-    background-color: #00819F;
-}
-
-h3 {
-    margin: auto;
-    color: white;
-    font-family: Open Sans;
-}
-
-
-#caja-de-texto {
-    width: 80%;
-    display: flex;
-}
-
 
 
 /* ESTILOS PANEL DERECHO */
@@ -97,32 +47,33 @@ h3 {
     transform: translateX(1rem);
 }
 
-/*ASIDE panelDerecho Tipografia*/
-.panelDerecho{
+/*ASIDE panelDerecho*/
+
+aside h4{
+    color: var(--solid-white, #FFF);
+
+/* 12px/payments-list-headers */
+font-family: Open Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-transform: uppercase;
+}
+.panelDerechoIMG{
     background-color: #364857;
     width: 241px;
     height: 100%;
     position: fixed;
-    margin-top: 57px;
     color: white;
     font-family: "open sans", "sans serif";
     right: 0;
     top: 0;
     padding-left: 16px;
-    padding-top: 10px;
+    
 }
-.panelDerecho h3{
-    margin-bottom: 10px;
-}
-select{
-    width: 208px;
-    height: 31px;
-    border: none;
-    border-radius: 4px;
-    background-color: #627B90;
-    color: white;
 
-}
+
 
 
 aside .pixelesSeccion{
@@ -139,35 +90,19 @@ aside .pixelesSeccion select{
    color: white;
 }
  aside .inputPixeles input{
-    width: 84px;
+    margin-bottom: 4px;
+    width: 172px;
     height: 31px;
     border-radius: 4px;
     border: none;
     background-color: #627B90;
- }
-
- /* Cambiar el color de los numeros */
-.pixelesSeccion input[type="number"] {
-    color: white;
-}
-
-
- aside .colorPicker input[type=text]{
-    width: 150px;
-    height: 31px;
-    border: none;
-    border-radius: 4px;
-    background-color: #627B90;
- }
- aside  .colorPicker input::placeholder{
-    color: white;
  }
 
 aside a:hover{
     cursor: pointer;
 }
 
-.contenedorBTNformatos{
+.contenedorBTN__aHorizontal{
     width: 211px;
     height: 31px;
     background-color: #627B90;
@@ -176,12 +111,17 @@ aside a:hover{
     justify-content: space-between;
 }
 
-.contenedorBTNformatos a{
-    width: 52.75px;
+.contenedorBTN__aHorizontal a{
+    width: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.contenedorBTN__aHorizontal a:hover{
+    background-color: #293743;
+    border-radius: 4px;
+ }
+
 
 .contenedorBTNjustificado{
     width: 211px;
@@ -190,13 +130,9 @@ aside a:hover{
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
-
  }
 
- .contenedorBTNformatos a:hover{
-    background-color: #293743;
-    border-radius: 4px;
- }
+
 
 .contenedorBTNjustificado a{
     width: 52.75px;
@@ -241,169 +177,81 @@ aside a:hover{
 }
 .EnlaceInput input::placeholder{
     color: white;
+    opacity: 50%;
 }
 
 
+/*BotonCambiarImg*/
 
-
-
-/* Aqui comienza el panel central */
-
-.panelCentral {
-    font-family: sans-serif;
-    width: 645px;
-    height: 735px;
-    background: #FFF;
-    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.50);
-    margin: auto;
-    margin-top: 50px;
-    padding-top: 10px;
-
-
-
-}
-
-/*MAIL UBER */
-.article {
-    margin: 20px;
-}
-
-.article .LogoUber {
-    background-color: #000;
-    padding-left: 20px;
-
-}
-
-
-
-
-.hero__cta {
-    margin-left: 0;
-    margin-top: 20px;
-    width: 208px;
-    height: 36px;
+.BotonCambiarImg{
+    display: flex;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
     border-radius: 4px;
     border: 1px solid #0796D4;
     background: #3EB5E8;
-    font-family: 'Open Sans', sans-serif;
     color: var(--solid-white, #FFF);
+    margin-top:24px ;
+    /* 16px / Body */
+    font-family: Open Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    width: 208px;
+    height: 36px;
 }
 
-
-
-.panelCentral .article .bloquesClass1{
-    margin-bottom: 50px;
+.BotonCambiarImg:hover{
+    cursor: pointer;
+    background-color: #40A7D3;
 }
-
-
-
-.panelCentral button {
-    background-color: #000;
-    color: #fff;
-    width: 264px;
-    height: 48px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    
-
-}
-.panelCentral button img{
-    width: 14px;
-    margin-left: 10px;
-}
-
-
-
-
-.footerMail {
-    background-color: #000;
-    height: 170px;
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 10px;
-
-}
-
-.footerMail a {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    margin-left: 10px;
-    font-size: 12px;
-
-}
-
-
-
 
 /* MODAL CON IMAGENES */
 
-.modal {
+.modal{ 
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #111111bd;
     display: flex;
+    background-color: #111111bd;
     opacity: 0;
     pointer-events: none;
 }
 
-.modal--show {
-    opacity: 1;
-    pointer-events: unset;
-
-}
-
-.modal__container {
+.modal__container{
     margin: auto;
     width: 90%;
-    max-width: 982px;
-    height: 90%;
-    max-height: 535px;
-    background-color: #fff;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: white;
     border-radius: 6px;
     padding: 3em 2.5em;
     display: grid;
     gap: 1em;
     place-items: center;
     grid-auto-columns: 100%;
-
 }
 
-.modal__title {
-    color: #000;
-    font-family: Open Sans;
-    font-size: 20px;
-
-
+.modal__close{
+    text-decoration: none;
 }
 
-.modal__paragraf {
-    margin-bottom: 10pex;
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    z-index: 400;
 }
 
-.modal__img {
-    width: 90%;
-    max-width: 300px;
-}
-
-.modal__close:hover {
-    cursor: pointer;
 
 
-}
+
+
 
 
 .mi-boton-swal {

@@ -1,167 +1,99 @@
-
-
-class PanelCentral {
-    constructor() {
+/*Boton guardar con sweet alert*/
+class MenuHeader{
+    constructor(){
 
     }
-
-    agregarIMG(img) {
-        this.modalIMG.push(img);
-    }
-
-    
-
-    mostrarModal() {
-        const openModal = document.querySelector('.hero__cta');
-        const modal = document.querySelector('.modal');
-        const closeModal = document.querySelector('.modal__close');
-        openModal.addEventListener('click', (e) => {
-            e.preventDefault();
-            modal.classList.add('modal--show')
-        })
-
-        closeModal.addEventListener('click', (e) => {
-            e.preventDefault();
-            modal.classList.remove('modal--show')
+    guardarCambio(){
+        const botonGuardar = document.querySelector('#BotonGuardarid')
+        botonGuardar.addEventListener('click', () => {
+            Swal.fire({
+                title: 'Perfecto',
+                text: 'Has guardado con exito esta plantilla',
+                confirmButtonText: 'Entendido',
+                customClass: {
+                    confirmButton: 'mi-boton-swal',
+        
+                }
+        
+        
+            })
         })
     }
+}
+const BtnGuardar=new MenuHeader();
+BtnGuardar.guardarCambio();
 
-   
+//Camibar familia tipografica
+const tipografia=document.getElementById("Tipografia");
+tipografia.addEventListener("change",()=>{
+    //Función cuando deba cambiar la familia tipográfica del texto
+    console.log("cambiaste la tipografía");
+});
 
-};
-const abrirModalIMG = new PanelCentral();
-abrirModalIMG.mostrarModal();
+//Cambiar peso
+const peso=document.getElementById("peso");
+peso.addEventListener("change",()=>{
+    //Funcion que cambia el peso de la tipografía
+    console.log("cambiaste el peso");
+})
 
+//Input aumentar o bajar pixeles
 
+const pixeles=document.getElementById("pixelesIndicador");
+pixeles.addEventListener("click",()=>{
+    //Funcion elegir entre pixeles, porcentaje y rem
+    console.log("cambiaste el indicador de pixeles");
+})
 
+//Cambiar unidad de medida (Pixeles,Porcentaje,rem)
 
+const unidadDeMedida=document.getElementById("inputUnidadDeMedida");
+unidadDeMedida.addEventListener("change",()=>{
+    //Dropdown cambiar unidad de medida
+    console.log("cambiaste la unidad de medida");
+})
 
-
-
-
-
-class PanelDerecho {
-
-    constructor() {
-        this.dropDown = [];
-    }
-
-    agregarValores(o) {
-        this.dropDown.push(o);
-    }
-
-    mostrarInput() {
-        let inputNumber = document.querySelector('.inputNumber');
-        inputNumber.innerHTML +=
-            ` <h4>titulo</h4>
-        <input type="number"/>`
-    }
-    mostrarButtonSpecial() {
-        let botonspecial = document.querySelector('.botonFormato'); 
-
-        botonspecial.innerHTML += `<div class=" botonesDerecho"> 
-        
-        <h4>Formato</h4>
-        <button>hola</button>
-        <button>hola</button>
-        <button>hola</button>
-        <button>hola</button>
-        
-        
-        </div>`
-    }
-
-
-
-
-
-    mostrarDropdown() {
-        let dropDown = document.querySelector('.dropdownMolde');
-        dropDown.innerHTML += ` 
-                <h4>titulo</h4>
-                <select name="select">
-                <option value="value1">Value 1</option>
-                <option value="value2" selected>Value 2</option>
-                <option value="value3">Value 3</option>
-                </select>
-                         `
-    }
-
-    mostrarColorPicker() {
-        let colorPicker1 = document.querySelector('.ColorPicker');
-        colorPicker1.innerHTML += `
-        <h4>Color</h4>
-        <input type="color" name="" id="colorPiker">
-        `
-
-    }
-   
-};
-
-const IP = new PanelDerecho();
-IP.mostrarInput();
-IP.mostrarButtonSpecial();
-IP.mostrarDropdown();
-IP.mostrarColorPicker();
-
-
-
-
-
-
-
-
-
-
-
-const botonGuardar = document.querySelector('#BotonGuardarid')
-botonGuardar.addEventListener('click', () => {
-    Swal.fire({
-        title: 'Perfecto',
-        text: 'Has guardado con exito esta plantilla',
-        confirmButtonText: 'Entendido',
-        customClass: {
-            confirmButton: 'mi-boton-swal',
-
-        }
-
-
-    })
+//COLOR
+const colorPicker=document.getElementById("colorPicker");
+colorPicker.addEventListener("click",()=>{
+    //Funcion que cambia de color el texto o algo seleccionado
+    //Va con oninput las lineas de codigo estan incompletas.
+    console.log("cambiaste de color algo");
 })
 
 
-//Cambiar color de background
-const input = document.getElementById("colorPiker");
-        const cuadrado = document.querySelector('.cuadrado');
-        const cuadrado2 = document.querySelector('.cuadrado2');
-    
-        cuadrado.addEventListener('click',()=>{
-        cuadrado.style.borderColor='red';
-        cuadrado.style.color='red';
-        cuadrado2.style.borderColor='black';
-        cuadrado2.style.color='black';
-        input.oninput= ()=>{
-        
-            cuadrado.style.backgroundColor=input.value;
-            
-            cuadrado.style.color='#ffff';
-        };
-            
-    });
-    
-        cuadrado2.addEventListener('click',()=>{
-        cuadrado2.style.borderColor='red';
-        cuadrado2.style.color='red';
-        cuadrado.style.borderColor='black'
-        cuadrado.style.color='black';
-        input.oninput= ()=>{
-        
-            cuadrado2.style.backgroundColor=input.value;
-            
-            cuadrado2.style.color='#ffff';
-        };
-            
-        });
+//FORMATO
+const formatos=document.getElementById("formatos");
+formatos.addEventListener("click",()=>{
+    //Cambiar el formato Bold, Italica, Tachado Etc
+
+    console.log("cambiaste el Formato");
+})
+
+//JUSTIFICADO   
+const justificado=document.getElementById("justificado");
+justificado.addEventListener("click",()=>{
+    //Funciones para el justificado
+
+    console.log("Cambiaste el justificado");
+})
+
+
+//LISTA
+
+const lista=document.getElementById("lista");
+lista.addEventListener("click",()=>{
+    //Funciones para la lista
+    console.log("cambiaste la lista");
+
+});
+
+//SWITCH
+const switch1=document.getElementById("enlace");
+switch1.addEventListener("click",()=>{
+   console.log("Cambiaste el switch");
+});
+
 
 
 

@@ -25,7 +25,7 @@
         </ul>
 
         <button class="BotonVistaPrevia">
-            <img src="./imagenes/visibilityicon.svg" alt="" id="IconoVistaPrevia">
+            <img src="./imagenes/visibilityicon.svg" alt="" id="IconoVistaPrevia" title="vista previa">
 
         </button>
         <button class="botonGuardar" id="BotonGuardarid">
@@ -36,62 +36,144 @@
 
     </header>
 
-    <section class="modal ">
+    
+        <section class="modal">
+            <div class="modal__container">
+                <h2 class="modal__title">Bienvenido al sitio!</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Dolorum nam doloremque magni dolorem cum minus saepe eveniet aut 
+                    fugit in illo, id esse est libero!</p>
+                <a href="" class="modal__close">X</a>    
+            </div>
+        </section>
+   
 
-        <div class="modal__container">
-            <div class="header__modal"></div>
-            <img src="./imagenes/closeX.svg" class="modal__close"></img>
-            <h2 class="modal__tittle">Selecciona una</h2>
 
-            <p class="modal__paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, necessitatibus!
-            </p>
-
-            <input type="file" name="" id="">
+    <aside class="panelDerecho">
+        <h3>Tipografía</h3>
+        <select name="dropdown" id="Tipografia">
+            <option value="OpenSans">Open Sans</option>
+            <option value="Nunito">Nunito</option>
+            <option value="Montserrat">Montserrat</option>
+        </select>
+        <h4>Peso</h4>
+        <select name="dropdown" id="peso">
+            <option value="Light">Light</option>
+            <option value="Regular">Regular</option>
+            <option value="Bold">Bold</option>
+        </select>
+        <div class="inputPixeles">
+            <h4>Pixeles</h4>
+            <div class="pixelesSeccion">
+                <input type="number" name="" id="pixelesIndicador">
+                <select name="" id="inputUnidadDeMedida">
+                    <option value="px">px</option>
+                    <option value="%">%</option>
+                    <option value="em">em</option>
+                </select>
+            </div>
+        
         </div>
-    </section>
 
-
-    <aside>
-
-        <div class="dropdownMolde">
-
+        <div class="colorPicker" id="colorPicker">
+            <h4>Color</h4>
+            <input type="color" name="" id="">
+            <input type="text" name="" id="" placeholder="#123124">
         </div>
-        <div class="ColorPicker">
 
-        </div>
-        <div class="divIntpu">
-            <div class="inputNumber">
-
+        <div class="formatos" id="formatos">
+            <h4>Formatos</h4>
+            <div class="contenedorBTNformatos">
+            <a><img src="./imagenes/format_bold_black_24dp.svg" alt=""></a>
+            <a><img src="./imagenes/format_clear_black_24dp 1.svg" alt=""></a>
+            <a><img src="./imagenes/format_italic_black_24dp.svg" alt=""></a>
+            <a><img src="./imagenes/format_underlined_black_24dp.svg" alt=""></a>
+            <a><img src="./imagenes/strikethrough_s_black_24dp.svg" alt=""></a>
             </div>
         </div>
-
-        <div class="botonFormato">
-
+        <div class="Justificado" id="justificado">
+            <h4>Justificado</h4>
+                <div class="contenedorBTNjustificado">
+                <a><img src="./imagenes/justificado/Vector.svg" alt=""></a>
+                <a><img src="./imagenes/justificado/Vector-1.svg" alt=""></a>
+                <a><img src="./imagenes/justificado/Vector-2.svg" alt=""></a>
+                <a><img src="./imagenes/justificado/Vector-3.svg" alt=""></a>
+            </div>
         </div>
-
-
+        <div class="Lista" id="lista">
+            <h4>Lista</h4>
+            <div class="contenedorBTNlista">
+                <a><img src="./imagenes/Lista/Vector-1.svg" alt=""></a>
+                <a><img src="./imagenes/Lista/Vector.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="Enlace">
+            <h4>Enlace</h4>
+            <div class="switch-button" id="enlace">
+                <!-- Checkbox -->
+                <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox">
+                <!-- Botón -->
+                <label for="switch-label" class="switch-button__label"></label>
+            </div>
+             <div class="EnlaceInput">
+            <input type="text" name="Enlace" id="" placeholder="Pegue aquí el enlace">
+            </div>
+        </div>
+        
     </aside>
 
-
+    
 
 
 
     <main class="panelCentral">
-        <div class="modulos">
-            <div class="cuadrado">
-                <h4>Header</h4>
+        <article class="article" id="bloquesId">
+            <div class="LogoUber">
+                <img src="./imagenes/ubberImg.png" alt="" >
             </div>
-            <div class="cuadrado2">
-                <h4>Body</h4>
+            
+            <div class="bloquesClass1" id="bloque1">
+                
+                
+                
+                <p>Hola Gaston,
+
+                    Tenemos información muy importante que compartir contigo. Con fecha 27 de 
+                    noviembre de 2023, hemos actualizado nuestros Términos y Condiciones de Usuarios, 
+                    además de incluir algunos cambios que harán que sean más accesibles y didácticos.
+                    <br>
+                    Los nuevos Términos y Condiciones de Usuarios ya se encuentran disponibles y 
+                    pueden ser consultados en el siguiente enlace.</p>
+                    Algunos de los cambios fueron:br
+                    <br>
+                    Un diseño nuevo que incluye gráficas e información más clara; información más detallada y 
+                    completa sobre los precios de servicios ofrecidos por terceros proveedores a través de la app de Uber.
+                    Estos cambios no afectan tu uso de la aplicación.
+                    <br>
+                    Por favor, asegurate de leer en detalle esta nueva versión de Términos y 
+                    Condiciones de Usuarios y así continuar utilizando la app de Uber.
+               
             </div>
-            <input type="button" value="CTA Footer">
-            <button type="submit" class="hero__cta">sube una imagen</button>
-        </div>
+                <div class="buttonCTA">
+                    <button class="buttonTerminosyCondiciones">
+                        <span>Términos y condiciones
+                            <img src="./imagenes/arrowRight.png" alt="">
+                        </span>
+                    </button>
+                </div>
+            
+            <div class="footerMail">
+                <a href="">Centro de ayuda</a>
+                <a href="">Términos</a>
+                <a href="">Privacidad</a>
+                <a href="">Desuscribirse</a>
+            </div>
+        </article>
     </main>
+    
 
 
-
-
+ 
 
 
 
